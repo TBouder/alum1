@@ -6,7 +6,7 @@
 /*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 20:19:19 by tbouder           #+#    #+#             */
-/*   Updated: 2015/12/21 16:15:12 by tbouder          ###   ########.fr       */
+/*   Updated: 2016/01/29 11:10:25 by tbouder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** This function will clear a chained list.
 */
 
-void		ft_list_clear(t_list **begin_list)
+void			ft_list_clear(t_list **begin_list)
 {
 	t_list	*free_list;
 	t_list	*temp;
@@ -76,7 +76,7 @@ static char		*ft_extract_grid_stdin(char *str)
 			if (buf == '\n')
 			{
 				str = ft_chain_to_string(list, ft_lstlen(list), str);
-				ft_list_clear(&list);				
+				ft_list_clear(&list);
 				return (str);
 			}
 			ft_lstend(&list, &buf, 1);

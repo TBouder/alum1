@@ -6,7 +6,7 @@
 /*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 20:08:18 by tbouder           #+#    #+#             */
-/*   Updated: 2015/12/21 20:25:05 by tbouder          ###   ########.fr       */
+/*   Updated: 2016/01/29 11:10:13 by tbouder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@ int				*ft_convert_as_int(char *str, int *nbr);
 int				ft_game(int *nbr);
 int				ft_count_grid_nbr(int *nbr);
 int				ft_res_ia(int *nbr, int index, int len);
-
 
 #endif
