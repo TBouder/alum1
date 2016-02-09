@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   alum_one.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
+/*   By: Tbouder <Tbouder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 20:08:18 by tbouder           #+#    #+#             */
-/*   Updated: 2016/01/29 11:10:13 by tbouder          ###   ########.fr       */
+/*   Updated: 2016/02/09 21:54:07 by Tbouder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdlib.h>
-# include "libft/libft.h"
+# include "libft.h"
 
 int				ft_verifs(char *str);
 void			ft_print_grid(int *nbr);
