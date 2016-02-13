@@ -13,7 +13,7 @@
 NAME 		= 	alum1
 
 CC			= 	gcc
-CFLAGS		= 	-Wall -Werror -Wextra -g
+CFLAGS		= 	-Wall -Werror -Wextra
 
 SRC 		= 	ft_launcher.c ft_verifs.c ft_print_grid.c \
 				ft_convert_as_int.c ft_game.c \
