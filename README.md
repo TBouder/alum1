@@ -24,10 +24,12 @@
 3. make  
 4. ./rush_alum1 [file with map or from STDIN]  
 
-###Map :  
+###Map (example) :  
+```
 2  
 4  
 6  
 8  
 10  
 12  
+```
