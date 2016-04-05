@@ -6,7 +6,7 @@
 #    By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/03 15:48:47 by tbouder           #+#    #+#              #
-#    Updated: 2016/01/05 10:37:06 by tbouder          ###   ########.fr        #
+#    Updated: 2016/04/05 20:21:26 by tbouder          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,29 +19,29 @@ SRC 		= 	ft_launcher.c ft_verifs.c ft_print_grid.c \
 				ft_convert_as_int.c ft_game.c \
 				ft_resolv_ia.c
 
-LIB			=	libft.a
+LIB			=	libft/libft.a
 
 OBJ			=	$(SRC:.c=.o)
 
-HEADER 		=	libft.h alum_one.h
+HEADER 		=	libft/libft.h alum_one.h
 
 all: $(NAME)
 
 .SILENT : $(NAME)
 $(NAME):
-	# cd libft/ && $(MAKE) re
+	$(MAKE) re -C libft
 	$(CC) $(CFLAGS) -c $(HEADER) $(SRC)
 	$(CC) -o $(NAME) $(OBJ) $(LIB)
 
 .SILENT : clean
 clean:
-	# cd libft/ && $(MAKE) clean
+	$(MAKE) clean -C libft
 	rm -f $(OBJ)
 	rm -f *.gch
 
 .SILENT : fclean
 fclean: clean
-	# cd libft/ && $(MAKE) fclean
+	$(MAKE) fclean -C libft
 	rm -f $(NAME)
 
 re: fclean all
